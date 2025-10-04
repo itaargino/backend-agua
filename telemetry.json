@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "msg_type": "telemetry",
+  "device_id": "esp32-agua-01",
+  "site_id": "fazenda-x_rio-igarape",
+  "sent_at": "2025-10-02T10:42:00-03:00",
+  "seq": 1235,
+  "measurements": [
+    {
+      "parameter": "pH",
+      "value": 7.18,
+      "unit": "pH",
+      "temp_compensated": true,
+      "uncertainty": 0.03,
+      "method": "eletrodo_vidro + PH4502C",
+      "calibration_id": "cal-2025-09-29-pH-2pts",
+      "raw": { "adc": 13211, "voltage_v": 2.41, "temp_c": 25.6, "slope_mV_per_pH": -58.1 }
+    },
+    {
+      "parameter": "temperature",
+      "value": 25.6,
+      "unit": "°C",
+      "method": "DS18B20",
+      "raw": { "rom": "28-FFA1B233A1C4", "resolution_bits": 12 }
+    },
+    {
+      "parameter": "turbidity",
+      "value": 4.2,
+      "unit": "NTU",
+      "method": "SEN0189/ST100",
+      "raw": { "adc": 9112, "voltage_v": 1.66 }
+    },
+    {
+      "parameter": "tds",
+      "value": 320,
+      "unit": "ppm",
+      "method": "Gravity TDS (k=1.0)",
+      "raw": { "adc": 10440, "voltage_v": 1.90, "ec_uS_cm": 640 }
+    },
+    {
+      "parameter": "od",
+      "value": 6.1,
+      "unit": "mg/L",
+      "temp_compensated": true,
+      "method": "DFRobot SEN0237-A (galvânico)",
+      "raw": { "adc": 12001, "voltage_v": 2.19, "salinity_ppt": 0.0 }
+    }
+  ],
+  "power": { "battery_v": 3.92, "usb_power": false },
+  "rssi_dbm": -61,
+  "fw": { "app": "safra-dourada-probe", "ver": "0.6.3" }
+}
