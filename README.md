@@ -13,3 +13,9 @@ API FastAPI para receber telemetria de qualidade da água.
    ```bash
    uvicorn main:app --reload
    http://127.0.0.1:8000/docs
+
+## Com Docker
+
+```bash
+docker build -t backend-agua .
+docker run -d -p 8000:8000 backend-agua
