@@ -15,7 +15,13 @@ API FastAPI para receber telemetria de qualidade da água.
    http://127.0.0.1:8000/docs
 
 ## Com Docker
+- Certifique-se de ter o docker instalado e rodando.
+- Use `sudo` para executar comandos no linux.
 
 ```bash
 docker build -t backend-agua .
 docker run -d -p 8000:8000 backend-agua
+```
+
+Será hospedado no link
+http://127.0.0.1:8000/docs
